@@ -17,14 +17,16 @@ body{
   height:250px;
   border-radius:5%;
   margin: 0 auto;
+  transition:.8s;
 }
 .headerimgs img:hover{
   width:140%;
   height:260px;
   border-radius:5%;
   transition: width 1.7s, height 1.7s, transform 1s;
-  transition-delay:.3s;
+  transition-delay:.35s;
   transform:rotate(1turn);
+  cursor:pointer;
 }
 #bigcontainer{
   display:block;
@@ -42,20 +44,54 @@ body{
 .leftcolumn ul{
   font-size:2em;
 }
+.leftcolumn ul li{
+  transition:1s;
+}
+.leftcolumn ul li:hover{
+  transition:all 1.5s ease;
+  color:#6451FF;
+  cursor:pointer;
+}
+.leftcolumn ul ul li:hover{
+  transition:all 1.5s ease;
+  background-color:black;
+  color:grey;
+  cursor:pointer;
+}
 .leftcolumn ul ul li{
   font-size:.4em;
+}
+.leftcolumnborder{
+  border-right: 4px solid grey;
 }
 .middlecolumn{
   display:inline-block;
   width:49%;
 }
 .middlecolumn h3{
+  position:relative;
+  top:-13px;
   text-align:center;
   font-size: 4em;
+  transition:.5s;
+}
+.middlecolumn h3:hover{
+  transition:1.5s;
+  color:gray;
+}
+.middlecolumn h3 span:hover{
+  transition:1s;
+  color:#6451FF;
 }
 .middlecolumn p{
   text-align:center;
   font-size: 2em;
+}
+.middlecolumn p span{
+  padding-bottom:100px;
+}
+.middlecolumn p:hover{
+  font-size:2.3em;
 }
 .rightcolumn{
   display:inline-block;
@@ -68,6 +104,12 @@ body{
 }
 .rightcolumn p{
   font-size:1.5em;
+  transition:1s;
+}
+.rightcolumn p:hover{
+  transition:.8s ease;
+  font-size:2em;
+  cursor:pointer;
 }
 footer {
   position:fixed;
